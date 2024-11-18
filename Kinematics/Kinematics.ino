@@ -29,12 +29,13 @@ int upersholder;
 
 ESP32PWM pwm;
 
-void setup() {
+void setup() 
+{
   Serial.begin(115200);
 
   ESP32PWM::allocateTimer(0);
-ESP32PWM::allocateTimer(1);
-ESP32PWM::allocateTimer(2);
+  ESP32PWM::allocateTimer(1);
+  ESP32PWM::allocateTimer(2);
 
   myServo.attach(4);
   myServo2.attach(5);
@@ -90,6 +91,7 @@ ESP32PWM::allocateTimer(2);
 
 }
 
-void loop() {
+void loop() 
+{
  
 }
