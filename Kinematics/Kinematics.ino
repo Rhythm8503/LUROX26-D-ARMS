@@ -6,13 +6,13 @@ Servo myServo3;
 
 float biseplength= 9.59;
 float forarmlength= 9.59;
-float xinput= 7.0;  //   max is 19.15  if  y=0 and z=0 
+float xinput= 0.0 ;  //   max is 18.00  if  y=0 and z=0 
 float x;
 float x1;
 float yinput= 14.0; //   max is 19.15     min is 11 when x=0 and z=0
 float y;
 float y11;
-float zinput= 2.0;  //   max is 19.15  if  y=0 and x=0
+float zinput= 0.0;  //   max is 18.00  if  y=0 and x=0
 float z;
 float z1;
 float elboAngleRad;
