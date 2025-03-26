@@ -2,6 +2,7 @@
 #include <math.h>
 #include <stdio.h>
 
+
   const float L1 = 2.598;
   const float L2 = 2.44;
   const float L3 = 6.649;
@@ -48,14 +49,20 @@ void setup()
 {
   Serial.begin(115200);
   delay(100);
-  Serial.println("Enter target x, y, z: ");
-  Serial.print("Hello Brian!");
+  //Serial.println("Enter target x, y, z: ");
 }
 
 void loop() 
 {
-  if(Serial.available() > 0)
+  Serial.println("Enter target x, y, z: ");
+
+  while(Serial.available() == 0)
   {
+
+  }
+
+  //if(Serial.available() > 0)
+  //{
     float x, y, z;
     x = Serial.parseFloat();
     y = Serial.parseFloat();
@@ -92,19 +99,6 @@ void loop()
     Serial.print("Theta6: "); Serial.print(theta6 * 180 / M_PI, 2); Serial.println(" degrees");
     Serial.println("---------------------------------------");
 
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
+    while(Serial.available() > 0) Serial.read();
+  //}
 }
